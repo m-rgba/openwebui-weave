@@ -4,12 +4,14 @@ OpenWebUI function to log your inputs and completions to Weave (by Weights & Bia
 
 Implementation notes:
 
-- [OpenWebUI](https://github.com/OpenWebUI/OpenWebUI) (open-source LLM web UI)
-- [Weave](https://wandb.ai/site/weave/) (get started logging free)
+- [OpenWebUI](https://github.com/OpenWebUI/OpenWebUI) (open-source LLM web UI).
+- [Weave](https://wandb.ai/site/weave/) (LLMOps, logging, and observability).
     - Uses [manual call tracking](https://weave-docs.wandb.ai/guides/tracking/tracing#3-manual-call-tracking) to log inputs and completions to your Weave project.
     - Triggers the call tracking using OpenWebUI's [filter functions](https://docs.openwebui.com/tutorials/plugin/functions/) before (inlet) and after (outlet) an LLM execution.
 
 ## Installation
+
+https://github.com/user-attachments/assets/615b5a2c-1647-4d82-a633-ca2ab0a12907
 
 ### 1. Setup your Weave project
 - Go to https://wandb.ai/home (sign up if you don't have an account), create a new project
@@ -18,13 +20,14 @@ Implementation notes:
 
 ### 2. Run your OpenWebUI interface and install the function
 - Run your OpenWebUI Docker container ([read more](https://docs.openwebui.com/getting-started/)), simplest way is to use the following command:
-
+ 
 ```bash
 docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
-- Visit the OpenWebUI Functions page at: http://localhost:3000/workspace/functions (assuming you used the default port and are local)
-- Open `filter.py`, copy content, paste the following code into the code field and click "Install".
-    - Alternatively install from the OpenWebUI gallery here: <a href="https://openwebui.com/f/mrgba/weave_context_and_completion_logging" target="_new">https://openwebui.com/f/mrgba/weave_context_and_completion_logging</a>
+
+- Visit the OpenWebUI Functions page at: http://localhost:3000/workspace/functions (assuming you're local and used the default port)
+- Open `filter.py` from this repo, copy content, paste the following code into the code field and click "Install".
+    - Alternatively install from the OpenWebUI gallery here: https://openwebui.com/f/mrgba/weave_context_and_completion_logging
 - Select the gear icon next to the function and set the `wandb_api_key` and `wandb_project_name` you copied in the first step.
     - Your API key can be found at: https://wandb.ai/settings.
     - Make sure you use `username/project_name` format for `wandb_project_name`.
