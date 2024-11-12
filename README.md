@@ -31,7 +31,7 @@ docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/
 - Select the gear icon next to the function and set the `wandb_api_key` and `wandb_project_name` you copied in the first step.
     - Your API key can be found at: https://wandb.ai/settings.
     - Make sure you use `username/project_name` format for `wandb_project_name`.
-- Set the function as "Global" to enable logging for all chat instances.
+- Enable the function and set as "Global" to enable logging for all chat instances.
 
 ### 3. Profit?
 - Visit https://wandb.ai/home and navigate to your project to see your logs of inputs and completions.
