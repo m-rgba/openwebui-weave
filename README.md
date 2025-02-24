@@ -27,7 +27,6 @@ docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/
 
 - Visit the OpenWebUI Functions page at: http://localhost:3000/admin/functions (assuming you're local and used the default port)
 - Open `filter.py` from this repo, copy content, paste the following code into the code field and click "Install".
-    - Alternatively install from the OpenWebUI gallery here: https://openwebui.com/f/mrgba/weave_context_and_completion_logging
 - Select the gear icon next to the function and set the `wandb_api_key` and `wandb_project_name` you copied in the first step.
     - Your API key can be found at: https://wandb.ai/settings.
     - Make sure you use `team/project_name` format for `wandb_project_name`.
