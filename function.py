@@ -20,7 +20,7 @@ class Filter:
         )
         wandb_project_name: Optional[str] = Field(
             default=None,
-            description="Weights & Biases project name for initialization in the format of `username/project_name`.",
+            description="Weights & Biases project name for initialization in the format of `team/project_name`.",
         )
         wandb_api_key: Optional[str] = Field(
             default=None, description="Weights & Biases API key for login."
