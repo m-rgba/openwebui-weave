@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/615b5a2c-1647-4d82-a633-ca2ab0a12907
 docker run -d -p 3000:8080 -e OPENAI_API_KEY=your_secret_key -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-- Visit the OpenWebUI Functions page at: http://localhost:3000/workspace/functions (assuming you're local and used the default port)
+- Visit the OpenWebUI Functions page at: http://localhost:3000/admin/functions (assuming you're local and used the default port)
 - Open `filter.py` from this repo, copy content, paste the following code into the code field and click "Install".
     - Alternatively install from the OpenWebUI gallery here: https://openwebui.com/f/mrgba/weave_context_and_completion_logging
 - Select the gear icon next to the function and set the `wandb_api_key` and `wandb_project_name` you copied in the first step.
