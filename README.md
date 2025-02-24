@@ -1,5 +1,7 @@
 # OpenWebUI + Weave (by Weights & Biases) Input/Completion Logging
 
+![CleanShot 2025-02-24 at 14 32 26@2x](https://github.com/user-attachments/assets/7047ef2d-9600-4d65-87f1-68af2fff63aa)
+
 OpenWebUI function to log your inputs and completions to Weave (by Weights & Biases) for LLMOps / observability.
 
 Implementation notes:
@@ -10,8 +12,6 @@ Implementation notes:
     - Triggers the call tracking using OpenWebUI's [filter functions](https://docs.openwebui.com/tutorials/plugin/functions/) before (inlet) and after (outlet) an LLM execution.
 
 ## Installation
-
-https://github.com/user-attachments/assets/615b5a2c-1647-4d82-a633-ca2ab0a12907
 
 ### 1. Setup your Weave project
 - Go to https://wandb.ai/home (sign up if you don't have an account), create a new project
